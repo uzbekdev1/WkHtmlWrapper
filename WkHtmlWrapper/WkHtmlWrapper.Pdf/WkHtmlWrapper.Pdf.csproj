@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageOutputPath>..\packages</PackageOutputPath>
+    <Authors>Ivan Vaileuski</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/flopik3-5/WkHtmlWrapper</PackageProjectUrl>
+    <Description>.Net wrapper for wkhtmltopdf.</Description>
+    <RepositoryUrl>https://github.com/flopik3-5/WkHtmlWrapper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageTags>wkhtmltopdf netstandard</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WkHtmlWrapper.Core\WkHtmlWrapper.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Executables\pdf.win.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+  </ItemGroup>
+
+</Project>

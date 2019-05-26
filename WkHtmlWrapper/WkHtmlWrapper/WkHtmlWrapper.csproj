@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageOutputPath>..\packages</PackageOutputPath>
+    <Authors>Ivan Vaileuski</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/flopik3-5/WkHtmlWrapper</PackageProjectUrl>
+    <Description>.Net wrapper for wkhtmltopdf and wkhtmltoimage.</Description>
+    <RepositoryUrl>https://github.com/flopik3-5/WkHtmlWrapper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageTags>wkhtmltopdf wkhtmltoimage netstandard</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WkHtmlWrapper.Core\WkHtmlWrapper.Core.csproj" />
+    <ProjectReference Include="..\WkHtmlWrapper.Image\WkHtmlWrapper.Image.csproj">
+      <IncludeAssets>all</IncludeAssets>
+      <PrivateAssets>analyzers;build</PrivateAssets>
+    </ProjectReference>
+    <ProjectReference Include="..\WkHtmlWrapper.Pdf\WkHtmlWrapper.Pdf.csproj">
+      <IncludeAssets>all</IncludeAssets>
+      <PrivateAssets>analyzers;build</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
